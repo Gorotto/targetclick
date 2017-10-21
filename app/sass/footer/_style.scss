@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  position: relative;
+  float: left;
+  bottom: 0;
+  background-color: #32323a;
+  padding: 20px 0;
+  box-sizing: border-box;
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    float: right;
+    color: #fff;
+    margin: 0;
+  }
+  &__logo {
+    width: 100px;
+    float: left;
+    img {
+      width: 100%;
+    }
+  }
+}

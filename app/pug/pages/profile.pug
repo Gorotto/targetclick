@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Предмет
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous")
+    link(rel="stylesheet", href="css/libs.min.css")
+    link(rel="stylesheet", href="css/jquery.datetimepicker.css")
+    link(rel="stylesheet", href="css/jquery.jscrollpane.css")
+    link(rel="stylesheet", href="css/styles.css")
+
+  body
+    include ./header
+    section.profile
+      .container
+        .title__wrap
+          h2 Сотрудники
+        .profile__user
+          .profile__user--thumb
+            img(src="img/user-pic.png")
+          a(href="#").profile__user--chat
+            | Написать в чат
+        .profile__info
+          .profile__info--title
+            | Александр Стогниенко
+          p +380962223314
+            span Мобильный:  
+          p  sotrudnik_market@ukr.net
+            span Почта:
+          p Не указано
+            span День рождения: 
+          p Не указано
+            span Работает с: 
+          p Маркетинг
+            span Отдел:  
+          p Маркетолог
+            span Должность: 
+        .profile__panel
+          a(href="#").profile__panel--task
+            span Поставить задачу
+          a(href="#").profile__panel--edit
+            span Редактировать
+          a(href="#").profile__panel--block
+            span Заблокировать
+          a(href="#").profile__panel--dismiss
+            span Уволить
+        .profile__note
+          textarea(placeholder="Что вы хотите предложить?").profile__note--field
+          a(href="").add-image
+          a(href="").add
+          a(href="")
+          a(href="").profile__note--send
+            | Отправить
+        include ./profile-wall
+          
+   
+                
+              
+    include ./footer
+    script(src='js/jquery-2.1.3.min.js') 
+    script(src='js/jquery.datetimepicker.full.min.js') 
+    script(src='js/jquery.jscrollpane.min.js') 
+    script(src="js/jquery.mousewheel.js") 
+    script(src="js/script.js")

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Предмет</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/libs.min.css"/>
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <ul class="header__menu">
+        <li class="active"><a href="">Обзор данных</a></li>
+        <li><a href="">Обсуждения</a></li>
+        <li><a href="">Склад</a></li>
+        <li><a href="">Задачи</a></li>
+        <li><a href="">Профиль сотрудника</a></li>
+        <li><a href="">Клиент</a></li>
+        <li><a href="">Счета</a></li>
+        <li><a href="">Календарь</a></li>
+        <li><a href="">Сотрудники</a></li>
+        <li><a href="">План продаж</a></li>
+        <li><a href="">Сделки</a></li>
+        <li><a href="">Облачное хранилище</a></li>
+        <li><a href="">Доставка</a></li>
+        <li><a href="">Чат </a></li>
+        <li><a href="">Звонки </a></li>
+      </ul>
+      <div class="container">
+        <div class="header__menu--button">
+          <div class="sandwich"><span class="sw-topper"></span>              <span class="sw-bottom"></span>              <span class="sw-footer"></span></div>
+        </div>
+        <div class="header__logo"><img src="img/logo.png"/></div><a class="header__user" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+      </div>
+    </header>
+    <section class="delivery">
+      <div class="container">
+        <div class="title__wrap">
+          <h2>Обзор данных</h2>
+        </div>
+        <form class="period__wrap" method="POST">
+          <div class="period__wrap--from"><span>От</span>
+            <input class="datepicker-inner" type="text"/>
+          </div>
+          <div class="period__wrap--before"><span>До</span>
+            <input class="datepicker-inner" type="text"/>
+          </div>
+          <button>Применить</button>
+        </form>
+        <div class="overview-data">
+          <div class="overview-data--item"><span class="overview-data--item-title"><a href="">Поступление денег</a></span><span class="overview-data--item-title"><a href="">Скидки</a></span>
+            <div class="overview-data--item-graph"><img src="img/graph/graph--1.png"/></div>
+          </div>
+          <div class="amount-information amount-information--red">
+            <p>Количество общих заявок <span>1</span></p>
+          </div>
+          <div class="amount-information amount-information--green">
+            <p>Все заказы <span>1</span></p>
+            <p>Выручка <span>0 грн</span></p>
+          </div>
+          <div class="amount-information amount-information--blue">
+            <p>Количество выставленных счетов <span>1</span></p>
+          </div>
+          <div class="overview-data--item"><span class="overview-data--item-title"><a href="">Статусы</a></span>
+            <div class="overview-data--item-graph"><img src="img/graph/graph--2.png"/></div>
+          </div>
+          <div class="overview-data--item"><span class="overview-data--item-title">Выполнение плана</span>
+            <div class="overview-data--item-graph"><img src="img/graph/graph--3.png"/></div>
+          </div>
+          <div class="overview-data--item"><span class="overview-data--item-title">Продавцы</span>
+            <div class="overview-data--item-graph"><img src="img/graph/graph--4.png"/></div>
+          </div>
+          <div class="overview-data--item"><span class="overview-data--item-title">Продажи по филиалам</span>
+            <div class="overview-data--item-graph"><img src="img/graph/graph--5.png"/></div>
+          </div>
+          <div class="overview-data--item"><span class="overview-data--item-title">Склад</span>
+            <div class="overview-data--item-graph"><img src="img/graph/graph--6.png"/></div>
+          </div>
+          <div class="overview-data--item"><span class="overview-data--item-title">Задачи</span>
+            <div class="overview-data--item-graph"><img src="img/graph/graph--7.png"/></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo"><img src="img/logo.png"/></div>
+        <p>Target click © 2017</p>
+      </div>
+    </footer>
+    <script src="js/jquery-2.1.3.min.js"> </script>
+    <script src="js/jquery.datetimepicker.full.min.js"> </script>
+    <script src="js/jquery.mousewheel.js"> </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

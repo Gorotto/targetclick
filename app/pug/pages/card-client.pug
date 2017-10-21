@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Предмет
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous")
+    link(rel="stylesheet", href="css/libs.min.css")
+    link(rel="stylesheet", href="css/jquery.datetimepicker.css")
+    link(rel="stylesheet", href="css/jquery.jscrollpane.css")
+    link(rel="stylesheet", href="css/styles.css")
+
+  body
+    include ./header
+    section.profile
+      .container
+        .title__wrap
+          h2 Сотрудники
+            a(href="").back-link
+              i.fa.fa-arrow-left(aria-hidden='true')
+              | Назад к клиентам
+        .profile__user
+          .profile__user--thumb
+            img(src="img/user-pic.png")
+          a(href="#").profile__user--chat
+            | Выставить счет
+          a(href="#").profile__user--contract
+            | Заключить договор
+          a(href="#").profile__user--edit
+            | Редактировать профиль
+        .profile__info
+          .profile__info--title
+            | Александр Стогниенко
+          p лояльный
+            span Лояльность клиента:  
+          p  client@ukr.net
+            span Email:
+          p +380964421210
+            span Телефон:
+          p Delta
+            span Компания: 
+          p директор
+            span Должность:  
+          p Администрация
+            span Департамент: 
+          p ЛПР (лицо, принимающее решения)
+            span Роль:
+          p 
+            span Сайт:
+          p 
+            span Мессенджер:: 
+          p Андрей Столяренко
+            span Ответственный: 
+        .profile__filter
+          .profile__filter--item.active
+            span.title Заявки  
+            span.count 0
+          .profile__filter--item
+            span.title Оплачено
+            span.count 0
+          .profile__filter--item
+            span.title Не оплачено   
+            span.count 0
+          .profile__filter--item
+            span.title Счета
+            span.count 0
+          .profile__filter--item
+            span.title Договора 
+            span.count 0 
+        .profile__communication
+          ul
+            li.active
+              a(href="#") 
+                i.fa.fa-pencil-square-o(aria-hidden='true')
+                | Сделать запись
+            li
+              a(href="#")
+                i.fa.fa-envelope-o(aria-hidden='true')
+                | Email
+            li
+              a(href="#")
+                i.fa.fa-phone(aria-hidden='true')
+                | Звонок
+            li
+              a(href="#")
+                i.fa.fa-plus(aria-hidden='true')
+                | Журнал активности 
+            li
+              a(href="#")
+                i.fa.fa-handshake-o(aria-hidden='true')
+                | Сделки
+            li
+              a(href="#")
+                i.fa.fa-ellipsis-h(aria-hidden='true')
+          .profile__communication--post
+            textarea(type="text", placeholder="Сделать запись...")
+            .profile__communication--post-panel
+              a(href="")
+                i.fa.fa-font(aria-hidden='true')
+              a(href="")
+                i.fa.fa-paperclip(aria-hidden='true')
+              a(href="")
+                i.fa.fa-link(aria-hidden='true')
+        .profile__wall--history
+          .profile__wall--history-item
+            .description
+              span Апрель 2017 г.
+              p Нет событий, соответствующих текущим фильтрам за апрель 2017 г.
+            .description
+              span Март 2017 г.
+            .note.note-new
+              .note--thumb
+                img(src="img/icons/circle-user.png")
+              p.note--text Вы оставили сообщение о Шарабановой Алле
+              .note--date 31 марта в 15:56
+              textarea(type="text", placeholder="Новая заметка")
+            .note.note-users
+              .note--thumb
+                img(src="img/icons/circle-user.png")
+              p.note--text Стадия жизненного цикла для Кирилп Аврамова была изменена на «lead» by askacomsite@gmail.com
+              .note--date 31 марта в 15:56
+              
+    include ./footer
+    script(src='js/jquery-2.1.3.min.js') 
+    script(src='js/jquery.datetimepicker.full.min.js') 
+    script(src='js/jquery.jscrollpane.min.js') 
+    script(src="js/jquery.mousewheel.js") 
+    script(src="js/script.js")

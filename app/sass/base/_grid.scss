@@ -1,0 +1,28 @@
+.container {
+    box-sizing: border-box;
+    padding-right: 18px;
+    padding-left: 18px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.container {
+    @extend %clearfix;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 766px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 990px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .container {
+        width: 1032px;
+    }
+}

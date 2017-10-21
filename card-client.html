@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Предмет</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/libs.min.css"/>
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css"/>
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <ul class="header__menu">
+        <li class="active"><a href="">Обзор данных</a></li>
+        <li><a href="">Обсуждения</a></li>
+        <li><a href="">Склад</a></li>
+        <li><a href="">Задачи</a></li>
+        <li><a href="">Профиль сотрудника</a></li>
+        <li><a href="">Клиент</a></li>
+        <li><a href="">Счета</a></li>
+        <li><a href="">Календарь</a></li>
+        <li><a href="">Сотрудники</a></li>
+        <li><a href="">План продаж</a></li>
+        <li><a href="">Сделки</a></li>
+        <li><a href="">Облачное хранилище</a></li>
+        <li><a href="">Доставка</a></li>
+        <li><a href="">Чат </a></li>
+        <li><a href="">Звонки </a></li>
+      </ul>
+      <div class="container">
+        <div class="header__menu--button">
+          <div class="sandwich"><span class="sw-topper"></span>              <span class="sw-bottom"></span>              <span class="sw-footer"></span></div>
+        </div>
+        <div class="header__logo"><img src="img/logo.png"/></div><a class="header__user" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+      </div>
+    </header>
+    <section class="profile">
+      <div class="container">
+        <div class="title__wrap">
+          <h2>Сотрудники<a class="back-link" href=""><i class="fa fa-arrow-left" aria-hidden="true"></i>Назад к клиентам</a></h2>
+        </div>
+        <div class="profile__user">
+          <div class="profile__user--thumb"><img src="img/user-pic.png"/></div><a class="profile__user--chat" href="#">Выставить счет</a><a class="profile__user--contract" href="#">Заключить договор</a><a class="profile__user--edit" href="#">Редактировать профиль</a>
+        </div>
+        <div class="profile__info">
+          <div class="profile__info--title">Александр Стогниенко</div>
+          <p>лояльный<span>Лояльность клиента:  </span></p>
+          <p> client@ukr.net<span>Email:</span></p>
+          <p>+380964421210<span>Телефон:</span></p>
+          <p>Delta<span>Компания: </span></p>
+          <p>директор<span>Должность:  </span></p>
+          <p>Администрация<span>Департамент: </span></p>
+          <p>ЛПР (лицо, принимающее решения)<span>Роль:</span></p>
+          <p> <span>Сайт:</span></p>
+          <p> <span>Мессенджер:: </span></p>
+          <p>Андрей Столяренко<span>Ответственный: </span></p>
+        </div>
+        <div class="profile__filter">
+          <div class="profile__filter--item active"><span class="title">Заявки  </span><span class="count">0</span></div>
+          <div class="profile__filter--item"><span class="title">Оплачено</span><span class="count">0</span></div>
+          <div class="profile__filter--item"><span class="title">Не оплачено   </span><span class="count">0</span></div>
+          <div class="profile__filter--item"><span class="title">Счета</span><span class="count">0</span></div>
+          <div class="profile__filter--item"><span class="title">Договора </span><span class="count">0 </span></div>
+        </div>
+        <div class="profile__communication">
+          <ul>
+            <li class="active"><a href="#"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i>Сделать запись</a></li>
+            <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Email</a></li>
+            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Звонок</a></li>
+            <li><a href="#"><i class="fa fa-plus" aria-hidden="true"></i>Журнал активности </a></li>
+            <li><a href="#"><i class="fa fa-handshake-o" aria-hidden="true"></i>Сделки</a></li>
+            <li><a href="#"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a></li>
+          </ul>
+          <div class="profile__communication--post">
+            <textarea type="text" placeholder="Сделать запись..."></textarea>
+            <div class="profile__communication--post-panel"><a href=""><i class="fa fa-font" aria-hidden="true"></i></a><a href=""><i class="fa fa-paperclip" aria-hidden="true"></i></a><a href=""><i class="fa fa-link" aria-hidden="true"></i></a></div>
+          </div>
+        </div>
+        <div class="profile__wall--history">
+          <div class="profile__wall--history-item">
+            <div class="description"><span>Апрель 2017 г.</span>
+              <p>Нет событий, соответствующих текущим фильтрам за апрель 2017 г.</p>
+            </div>
+            <div class="description"><span>Март 2017 г.</span></div>
+            <div class="note note-new">
+              <div class="note--thumb"><img src="img/icons/circle-user.png"/></div>
+              <p class="note--text">Вы оставили сообщение о Шарабановой Алле</p>
+              <div class="note--date">31 марта в 15:56</div>
+              <textarea type="text" placeholder="Новая заметка"></textarea>
+            </div>
+            <div class="note note-users">
+              <div class="note--thumb"><img src="img/icons/circle-user.png"/></div>
+              <p class="note--text">Стадия жизненного цикла для Кирилп Аврамова была изменена на «lead» by askacomsite@gmail.com</p>
+              <div class="note--date">31 марта в 15:56</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo"><img src="img/logo.png"/></div>
+        <p>Target click © 2017</p>
+      </div>
+    </footer>
+    <script src="js/jquery-2.1.3.min.js"> </script>
+    <script src="js/jquery.datetimepicker.full.min.js"> </script>
+    <script src="js/jquery.jscrollpane.min.js"> </script>
+    <script src="js/jquery.mousewheel.js"> </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

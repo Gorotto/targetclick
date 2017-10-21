@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Предмет
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous")
+    link(rel="stylesheet", href="css/libs.min.css")
+    link(rel="stylesheet", href="css/styles.css")
+
+  body
+    include ./header
+    section.authorization
+      .container
+        .authorization__wrap
+          h2 Выход
+          p Хотите выйти из учетной записи?
+          a(href="#").exit--link Выход
+          
+    include ./footer
+    script(src='js/jquery-2.1.3.min.js') 
+    script(src="js/script.js")

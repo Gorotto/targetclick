@@ -1,0 +1,145 @@
+.header {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 20px 0;
+  box-sizing: border-box;
+  background-color: #32323a;
+  box-shadow: -3px 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  &__logo {
+    width: 159px;
+    height: 50px;
+    margin: 0 auto;
+    float: none;
+    display: inline-block;
+    img {
+      width: 100%;
+    }
+  }
+  &__user {
+    margin-top: 13px;
+    float: right;
+    i {
+      font-size: 30px;
+      color: #fff;
+    }
+  }
+}
+.header__menu {
+  width: 100%;
+  height: 100%;
+  margin: 70px 0 0 0;
+  padding: 0;
+  background-color: #222;
+  position: absolute;
+  z-index: 90;
+  left: 0;
+  display: none;
+  li {
+    width: 100%;
+    display: inline-block;
+    list-style-type: none;
+    float: left;
+    padding: 20px 0 20px 40px;
+    box-sizing: border-box;
+    background-color: #222;
+    a {
+      font-size: 18px;
+      font-weight: 400;
+      color: #fff;
+      width: 100%;
+      text-align: left;
+      float: left;
+    }
+    &:hover {
+      background-color: #333;
+      a {
+        color: #ffb242;
+      }
+    }
+  }
+  li.active {
+    background-color: #333;
+    a {
+      color: #ffb242;
+    }
+  }
+}
+.header__menu--button {
+  width: 52px;
+  height: 40px;
+  position: relative;
+  z-index: 3;
+  border: none;
+  float: left;
+  top: 6px;
+  background-color: transparent;
+  outline: none;
+  span {
+    display: block;
+   }
+}
+
+.sandwich {
+  width: 52px;
+  height: 34px;
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 200;
+ }
+
+.sw-topper {
+  position: relative;
+  top: 0;
+  width: 52px;
+  height: 3px;
+  background: white;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: transform 0.5s, top 0.2s;
+  display: block;
+}
+
+.sw-bottom {
+  position: relative;
+  width: 52px;
+  height: 3px;
+  top: 6.6px;
+  background: white;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: transform 0.5s, top 0.2s;
+  transition-delay: 0.2s, 0;
+}
+
+.sw-footer {
+  position: relative;
+  width: 52px;
+  height: 3px;
+  top: 13.5px;
+  background: white;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: all 0.5s;
+  transition-delay: 0.1s;
+}
+
+.sandwich.active .sw-topper {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+.sandwich.active .sw-bottom {
+  top: 6px;
+  transform: rotate(45deg);
+}
+.sandwich.active .sw-footer {
+  opacity: 0;
+  top: 0;
+  transform: rotate(180deg);
+}

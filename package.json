@@ -1,0 +1,55 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Набор включенных технологий: HTML, CSS, JS, Gulp, SCSS, PostCSS, JQuery, Bower",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "browser-sync": "^2.18.13",
+    "cssnano": "^3.10.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-extend": "^1.1.6",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp.spritesmith": "^6.5.1",
+    "imagemin-pngquant": "^5.0.1",
+    "postcss-assets": "^4.2.0",
+    "postcss-fixes": "^1.4.2",
+    "postcss-focus": "^2.0.0",
+    "postcss-font-magician": "^2.1.0",
+    "postcss-px-to-em": "^1.0.1",
+    "postcss-pxtorem": "^4.0.1",
+    "postcss-short": "^3.0.3",
+    "postcss-short-spacing": "^2.0.1",
+    "postcss-sorting": "^2.1.0",
+    "rimraf": "^2.6.2",
+    "stylefmt": "^5.3.2",
+    "stylelint-config-standard": "^16.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gorotto/template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gorotto/template/issues"
+  },
+  "homepage": "https://github.com/Gorotto/template#readme"
+}

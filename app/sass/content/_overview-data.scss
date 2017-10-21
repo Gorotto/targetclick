@@ -1,0 +1,49 @@
+.overview-data {
+  float: left;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 100%;
+  &--item {
+    width: 100%;
+    float: left;
+    margin: 30px 0;
+    &-graph {
+      width: 100%;
+      float: left;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      height: 300px;
+      @include breakpoint(max-width 660px) {
+        height: 200px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-title {
+      float: left;
+      width: auto;
+      margin-right: 20px;
+      text-align: left;
+      color: #333;
+      font-size: 18px;
+      font-weight: 300;
+      a {
+        text-align: left;
+        float: left;
+        display: inline-block;
+        color: #333;
+        font-size: 26px;
+        font-weight: 300;
+        border-bottom: 1px dashed #333;
+        &:hover {
+          color: #333;
+        }
+      }
+    }
+  }
+}

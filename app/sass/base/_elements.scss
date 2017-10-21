@@ -1,0 +1,522 @@
+input, select {
+  height: 42px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  background-color: #fff;
+  padding-left: 15px;
+  box-sizing: border-box;
+  &:focus {
+    border: 1px solid #ff9100;
+  }
+  &::placeholder {
+    color: #bbb;
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
+section {
+  width: 100%;
+  float: left;
+  position: relative;
+
+}
+
+h2 {
+  color: #333;
+  width: 100%;
+  float: left;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: left;
+  margin: 0;
+}
+
+.title__wrap {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-top: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  h2 {
+    text-align: left;
+  }
+}
+
+
+button {
+  height: 42px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.tables__wrap {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-top: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  @include breakpoint(max-width 450px) {
+    padding: 10px;
+  }
+  &--search {
+    width: 100%;
+    float: left;
+    position: relative;
+    margin: 20px 0;
+    .search__wrap--search {
+      width: calc(100% - 162px);
+      float: left;
+      @include breakpoint(max-width 670px) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    button {
+      margin-top: 0;
+      width: 150px;
+      float: left;
+      background-color: #ffaa15;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 40px;
+      color: #fff;
+      margin-left: 12px;
+      @include breakpoint(max-width 660px) {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+    .transactions-status,
+    .filter-status {
+      float: left;
+      width: 50%;
+      margin-top: 20px;
+      @include breakpoint(max-width 670px) {
+        width: 100%;
+        margin: 0;
+      }
+      span {
+        width: 100%;
+        font-weight: 300;
+        line-height: 28px;
+        font-size: 16px;
+        color: #333;
+        float: left;
+      }
+      p, a {
+        float: left;
+        font-weight: 300;
+        line-height: 28px;
+        font-size: 16px;
+        color: #ff9c00;
+      }
+      a:hover {
+        border-bottom: 1px dashed #ff9c00;
+      }
+    }
+  }
+
+}
+
+.scroll__wrap {
+  width: 100%;
+  float: left;
+  position: relative;
+  background-color: #fff;
+  &--box {
+    float: left;
+    width: 2000px;
+    position: relative;
+    &-title,
+    &-row {
+      width: 100%;
+      float: left;
+      background-color: #f8f8f8;
+      border-top: 1px solid #dadada;
+      border-bottom: 1px solid #dadada;
+      padding: 10px 0;
+      box-sizing: border-box;
+      &:last-of-type {
+        margin-bottom: 70px;
+      }
+      span {
+        color: #333;
+        float: left;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 600;
+        padding-left: 20px;
+        box-sizing: border-box;
+      }
+    }
+    &-row {
+      border-top: none;
+      padding: 18px 0;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flex;
+      display: inline-flex;
+      flex-flow: row wrap;
+      align-items: center;
+      span {
+        font-weight: 300;
+        font-size: 16px;
+      }
+    }
+    &-address {
+      width: 270px;
+    }
+    &-telephone {
+      width: 180px;
+    }
+    &-recipient {
+      width: 200px;
+    }
+    &-product {
+      width: 190px;
+    }
+    &-amount {
+      width: 140px;
+    }
+    &-size {
+      width: 140px;
+    }
+    &-action {
+      width: 140px;
+      padding-left: 21px;
+      img {
+        width: 65px;
+        height: 35px;
+      }
+    }
+    &-type {
+      width: 80px;
+      img {
+        width: 32px;
+        height: 40px;
+      }
+    }
+    &-date {
+      width: 180px;
+    }
+    &-status {
+      width: 205px;
+      select {
+        width: 180px;
+        height: 40px;
+        outline: none;
+        background-color: #31c7ec;
+        border-radius: 3px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #fff;
+        -moz-appearance: none;
+        text-indent: 0.01px;
+        text-overflow: '';
+        -ms-appearance: none;
+        appearance: none!important;
+        background-image: url("../img/icons/shevron-down-white.png");
+        background-repeat: no-repeat;
+        background-position-x: 96%;
+        background-position-y: center;
+      }
+    }
+    &-priority {
+      width: 120px;
+    }
+    &-note {
+      width: 120px;
+    }
+    &-duration {
+      width: 180px;
+    }
+    &-photo {
+      width: 57px;
+      margin-right: 20px;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+    &-name {
+      width: 320px;
+    }
+    &-position  {
+      width: 270px;
+    }
+    &-email {
+      width: 250px;
+    }
+    &-code {
+      width: 170px;
+    }
+    &-quantity {
+      width: 170px;
+    }
+    &-razdel {
+      width: 170px;
+    }
+    &-quantity {
+      width: 170px;
+    }
+    &-stock {
+      width: 180px;
+    }
+    &-description {
+      width: 180px;
+    }
+    &-deal{
+      width: 210px;
+    }
+    &-company {
+      width: 180px;
+    }
+    &-task {
+      width: 250px;
+    }
+    &-checkbox {
+      float: left;
+      margin-left: 20px;
+      margin-top: 5px;
+      margin-bottom: 0;
+      > label {
+        float: left;
+      }
+      > input[type="checkbox"] {
+        display: none;
+      }
+      > input[type="checkbox"] + label {
+        display: block;
+        position: relative;
+        float: left;
+        cursor: pointer;
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #dadada;
+        border-radius: 4px;
+      }
+      > input[type="checkbox"]:checked + label {
+          &:after {
+            content: "";
+            width: 14px;
+            height: 2px;
+            background-color: #333;
+            position: absolute;
+            transform: rotate(125deg);
+            bottom: 6px;
+            left: 3px;
+          }
+          &:before{
+            content: "";
+            width: 8px;
+            height: 2px;
+            background-color: #333;
+            position: absolute;
+            transform: rotate(-138deg);
+            left: 0px;
+            bottom: 3px;
+          }
+      }
+    }
+  }
+}
+
+.jspHorizontalBar {
+  height: 30px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+}
+.jspTrack {
+  background-color: #fff;
+}
+.jspDrag{
+	position: absolute;
+	bottom: 0;  /* можно прижать к нижнему или верхнему краю */
+	left: 0;
+  width: 100px;
+  height: 53px;
+  background-color: #ddd;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    left: calc(50% - 10px);
+    margin-top: 18px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    left: calc(50% - 10px);
+    margin-top: 10px;
+  }
+}
+
+
+.filter-count {
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+  &--small {
+    a {
+      width: 25%;
+      @include breakpoint(max-width 670px) {
+        width: 50%;
+      }
+    }
+  }
+  &--item {
+    float: left;
+    width: calc(100% / 7);
+    text-align: center;
+    border-right: 1px solid #e6e6e6;
+    padding: 20px 0;
+    box-sizing: border-box;
+    &:last-of-type {
+      border-right: none;
+      @include breakpoint(max-width 670px) {
+        border-right: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+      }
+    }
+    @include breakpoint(max-width 670px) {
+      width: 33%;
+      border-bottom: 1px solid #e6e6e6;
+    }
+    .count {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: inline-block;
+      float: none;
+      margin: 0 auto 10px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 38px;
+      color: #fff;
+      &-turquoise {
+        background-color: #31c7ec;
+      }
+      &-orange {
+        background-color: #f5a100;
+      }
+      &-yellow {
+        background-color: #ffd369;
+      }
+      &-red {
+        background-color: #ff0000;
+      }
+      &-blue {
+        background-color: #2222b7;
+      }
+      &-green {
+        background-color: #24b928;
+      }
+      &-grey {
+        background-color: #cdcdcd;
+      }
+    }
+    &-title {
+      width: 100%;
+      float: left;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 24px;
+      color: #333;
+    }
+  }
+  .total-amount {
+    float: left;
+    width: 28%;
+    border-left: 1px solid #e6e6e6;
+    padding: 29px 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    @include breakpoint(max-width 660px) {
+      font-size: 14px;
+      width: 32%;
+      border-left: none;
+    }
+    .value {
+      width: 100%;
+      float: left;
+      position: relative;
+      font-weight: 300;
+    }
+  }
+}
+
+.back-link {
+  float: right;
+  color: #ff9100;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  border-bottom: 1px dashed #ff9100;
+  i {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+}
+
+.amount-information {
+  width: 100%;
+  float: left;
+  height: 90px;
+  padding: 15px;
+  box-sizing: border-box;
+  margin: 15px 0;
+  p {
+    float: left;
+    display: inline-block;
+    width: auto;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 10px;
+    &:nth-of-type(2) {
+      &:before {
+        content: "/";
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        margin-right: 10px;
+      }
+    }
+  }
+  &--red {
+    background-color: #fa8564;
+  }
+  &--green {
+    background-color: #66bd78;
+  }
+  &--blue {
+    background-color: #23b7e5;
+  }
+}

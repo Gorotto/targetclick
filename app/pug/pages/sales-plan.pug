@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Предмет
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous")
+    link(rel="stylesheet", href="css/libs.min.css")
+    link(rel="stylesheet", href="css/percircle.css")
+    link(rel="stylesheet", href="css/jquery.datetimepicker.css")
+    link(rel="stylesheet", href="css/styles.css")
+
+  body
+    include ./header
+    section.delivery
+      .container
+        .title__wrap
+          h2 План продаж
+        form(method='POST' ).period__wrap
+          .select-wrap
+            span Офис
+            select
+              option Главный офис
+              option Главный офис
+              option Главный офис
+          .period__wrap--from
+            span От
+            input.datepicker-inner(type='text')
+          .period__wrap--before
+            span До
+            input.datepicker-inner(type='text')
+          button Применить
+  
+        .sales-plan
+          .sales-plan__wrap
+            ul.month-list
+              li.month-list--item.active(data-tab="01") 
+                a(href="#") Январь
+              li.month-list--item(data-tab="02")
+                a(href="#")  Февраль
+              li.month-list--item(data-tab="03")
+                a(href="#")  Март
+              li.month-list--item(data-tab="04")
+                a(href="#")  Апрель
+              li.month-list--item(data-tab="05")
+                a(href="#")  Май
+              li.month-list--item(data-tab="06")
+                a(href="#")  Июнь
+              li.month-list--item(data-tab="07")
+                a(href="#")  Июль
+              li.month-list--item(data-tab="08")
+                a(href="#")  Август
+              li.month-list--item(data-tab="09")
+                a(href="#")  Сентябрь
+              li.month-list--item(data-tab="10")
+                a(href="#")  Октябрь
+              li.month-list--item(data-tab="11")
+                a(href="#")  Ноябрь
+              li.month-list--item(data-tab="12")
+                a(href="#")  Декабрь
+        
+            .sales-plan__wrap--item.current#01
+              .progress-circle.big(data-percent='17')
+              p Данные за 
+                b январь 2017 
+                |года
+              .plan
+                .plan__item
+                  .thumb
+                    img(src='img/icons/graph.png', alt='')     
+                    span План, грн 
+                  .circle
+                    strong 100 000
+                    | грн
+                .plan__item
+                  .thumb
+                    img(src='img/icons/percent.png', alt='')
+                    |                 
+                    span % плана
+                  .circle
+                    strong 12%         
+                .plan__item
+                  .thumb
+                    img(src='img/icons/revenue.png', alt='')
+                    |                 
+                    span Выручка, грн
+                  |               
+                  .circle
+                    strong 12 000
+                    | грн            
+                .plan__item
+                  .thumb
+                    img(src='img/icons/transactions.png', alt='')
+                    |                 
+                    span Сделок
+                  |               
+                  .circle
+                    strong 3           
+                .plan__item
+                  .thumb
+                    img(src='img/icons/check.png', alt='')
+                    |                 
+                    span Средний чек, грн
+                  |               
+                  .circle
+                    strong 4 000
+                    | грн
+              .plan-totals
+                span Выполнение плана             
+                  .plan-totals__result
+                    span 12,0 % (0/0)
+            .sales-plan__wrap--item#02
+              .progress-circle.big(data-percent='17')
+              p Данные за 
+                b февраль 2017 
+                |года
+              .plan
+                .plan__item
+                  .thumb
+                    img(src='img/icons/graph.png', alt='')     
+                    span План, грн 
+                  .circle
+                    strong 100 000
+                    | грн
+                .plan__item
+                  .thumb
+                    img(src='img/icons/percent.png', alt='')
+                    |                 
+                    span % плана
+                  .circle
+                    strong 12%         
+                .plan__item
+                  .thumb
+                    img(src='img/icons/revenue.png', alt='')
+                    |                 
+                    span Выручка, грн
+                  |               
+                  .circle
+                    strong 12 000
+                    | грн            
+                .plan__item
+                  .thumb
+                    img(src='img/icons/transactions.png', alt='')
+                    |                 
+                    span Сделок
+                  |               
+                  .circle
+                    strong 3           
+                .plan__item
+                  .thumb
+                    img(src='img/icons/check.png', alt='')
+                    |                 
+                    span Средний чек, грн
+                  |               
+                  .circle
+                    strong 4 000
+                    | грн
+              .plan-totals
+                span Выполнение плана             
+                  .plan-totals__result
+                    span 12,0 % (0/0)
+            .sales-plan__wrap--item#03
+              .progress-circle.big(data-percent='17')
+              p Данные за 
+                b март 2017 
+                |года
+              .plan
+                .plan__item
+                  .thumb
+                    img(src='img/icons/graph.png', alt='')     
+                    span План, грн 
+                  .circle
+                    strong 100 000
+                    | грн
+                .plan__item
+                  .thumb
+                    img(src='img/icons/percent.png', alt='')
+                    |                 
+                    span % плана
+                  .circle
+                    strong 12%         
+                .plan__item
+                  .thumb
+                    img(src='img/icons/revenue.png', alt='')
+                    |                 
+                    span Выручка, грн
+                  |               
+                  .circle
+                    strong 12 000
+                    | грн            
+                .plan__item
+                  .thumb
+                    img(src='img/icons/transactions.png', alt='')
+                    |                 
+                    span Сделок
+                  |               
+                  .circle
+                    strong 3           
+                .plan__item
+                  .thumb
+                    img(src='img/icons/check.png', alt='')
+                    |                 
+                    span Средний чек, грн
+                  |               
+                  .circle
+                    strong 4 000
+                    | грн
+              .plan-totals
+                span Выполнение плана             
+                  .plan-totals__result
+                    span 12,0 % (0/0)
+            .sales-plan__wrap--item#04
+              .progress-circle.big(data-percent='17')
+              p Данные за 
+                b апрель 2017 
+                |года
+              .plan
+                .plan__item
+                  .thumb
+                    img(src='img/icons/graph.png', alt='')     
+                    span План, грн 
+                  .circle
+                    strong 100 000
+                    | грн
+                .plan__item
+                  .thumb
+                    img(src='img/icons/percent.png', alt='')
+                    |                 
+                    span % плана
+                  .circle
+                    strong 12%         
+                .plan__item
+                  .thumb
+                    img(src='img/icons/revenue.png', alt='')
+                    |                 
+                    span Выручка, грн
+                  |               
+                  .circle
+                    strong 12 000
+                    | грн            
+                .plan__item
+                  .thumb
+                    img(src='img/icons/transactions.png', alt='')
+                    |                 
+                    span Сделок
+                  |               
+                  .circle
+                    strong 3           
+                .plan__item
+                  .thumb
+                    img(src='img/icons/check.png', alt='')
+                    |                 
+                    span Средний чек, грн
+                  |               
+                  .circle
+                    strong 4 000
+                    | грн
+              .plan-totals
+                span Выполнение плана             
+                  .plan-totals__result
+                    span 12,0 % (0/0)
+            .sales-plan__wrap--item#05
+              .progress-circle.big(data-percent='17')
+              p Данные за 
+                b май 2017 
+                |года
+              .plan
+                .plan__item
+                  .thumb
+                    img(src='img/icons/graph.png', alt='')     
+                    span План, грн 
+                  .circle
+                    strong 100 000
+                    | грн
+                .plan__item
+                  .thumb
+                    img(src='img/icons/percent.png', alt='')
+                    |                 
+                    span % плана
+                  .circle
+                    strong 12%         
+                .plan__item
+                  .thumb
+                    img(src='img/icons/revenue.png', alt='')
+                    |                 
+                    span Выручка, грн
+                  |               
+                  .circle
+                    strong 12 000
+                    | грн            
+                .plan__item
+                  .thumb
+                    img(src='img/icons/transactions.png', alt='')
+                    |                 
+                    span Сделок
+                  |               
+                  .circle
+                    strong 3           
+                .plan__item
+                  .thumb
+                    img(src='img/icons/check.png', alt='')
+                    |                 
+                    span Средний чек, грн
+                  |               
+                  .circle
+                    strong 4 000
+                    | грн
+              .plan-totals
+                span Выполнение плана             
+                  .plan-totals__result
+                    span 12,0 % (0/0)
+            .sales-plan__wrap--item#06
+              .progress-circle.big(data-percent='17')
+              p Данные за 
+                b июнь 2017 
+                |года
+              .plan
+                .plan__item
+                  .thumb
+                    img(src='img/icons/graph.png', alt='')     
+                    span План, грн 
+                  .circle
+                    strong 100 000
+                    | грн
+                .plan__item
+                  .thumb
+                    img(src='img/icons/percent.png', alt='')
+                    |                 
+                    span % плана
+                  .circle
+                    strong 12%         
+                .plan__item
+                  .thumb
+                    img(src='img/icons/revenue.png', alt='')
+                    |                 
+                    span Выручка, грн
+                  |               
+                  .circle
+                    strong 12 000
+                    | грн            
+                .plan__item
+                  .thumb
+                    img(src='img/icons/transactions.png', alt='')
+                    |                 
+                    span Сделок
+                  |               
+                  .circle
+                    strong 3           
+                .plan__item
+                  .thumb
+                    img(src='img/icons/check.png', alt='')
+                    |                 
+                    span Средний чек, грн
+                  |               
+                  .circle
+                    strong 4 000
+                    | грн
+              .plan-totals
+                span Выполнение плана             
+                  .plan-totals__result
+                    span 12,0 % (0/0)
+            .sales-plan__wrap--item#07
+              .progress-circle.big(data-percent='17')
+              p Данные за 
+                b июль 2017 
+                |года
+              .plan
+                .plan__item
+                  .thumb
+                    img(src='img/icons/graph.png', alt='')     
+                    span План, грн 
+                  .circle
+                    strong 100 000
+                    | грн
+                .plan__item
+                  .thumb
+                    img(src='img/icons/percent.png', alt='')
+                    |                 
+                    span % плана
+                  .circle
+                    strong 12%         
+                .plan__item
+                  .thumb
+                    img(src='img/icons/revenue.png', alt='')
+                    |                 
+                    span Выручка, грн
+                  |               
+                  .circle
+                    strong 12 000
+                    | грн            
+                .plan__item
+                  .thumb
+                    img(src='img/icons/transactions.png', alt='')
+                    |                 
+                    span Сделок
+                  |               
+                  .circle
+                    strong 3           
+                .plan__item
+                  .thumb
+                    img(src='img/icons/check.png', alt='')
+                    |                 
+                    span Средний чек, грн
+                  |               
+                  .circle
+                    strong 4 000
+                    | грн
+              .plan-totals
+                span Выполнение плана             
+                  .plan-totals__result
+                    span 12,0 % (0/0)
+            .sales-plan__wrap--item#08
+              .progress-circle.big(data-percent='17')
+              p Данные за 
+                b август 2017 
+                |года
+              .plan
+                .plan__item
+                  .thumb
+                    img(src='img/icons/graph.png', alt='')     
+                    span План, грн 
+                  .circle
+                    strong 100 000
+                    | грн
+                .plan__item
+                  .thumb
+                    img(src='img/icons/percent.png', alt='')
+                    |                 
+                    span % плана
+                  .circle
+                    strong 12%         
+                .plan__item
+                  .thumb
+                    img(src='img/icons/revenue.png', alt='')
+                    |                 
+                    span Выручка, грн
+                  |               
+                  .circle
+                    strong 12 000
+                    | грн            
+                .plan__item
+                  .thumb
+                    img(src='img/icons/transactions.png', alt='')
+                    |                 
+                    span Сделок
+                  |               
+                  .circle
+                    strong 3           
+                .plan__item
+                  .thumb
+                    img(src='img/icons/check.png', alt='')
+                    |                 
+                    span Средний чек, грн
+                  |               
+                  .circle
+                    strong 4 000
+                    | грн
+              .plan-totals
+                span Выполнение плана             
+                  .plan-totals__result
+                    span 12,0 % (0/0)
+            .sales-plan__wrap--item#09
+              .progress-circle.big(data-percent='17')
+              p Данные за 
+                b сентябрь 2017 
+                |года
+              .plan
+                .plan__item
+                  .thumb
+                    img(src='img/icons/graph.png', alt='')     
+                    span План, грн 
+                  .circle
+                    strong 100 000
+                    | грн
+                .plan__item
+                  .thumb
+                    img(src='img/icons/percent.png', alt='')
+                    |                 
+                    span % плана
+                  .circle
+                    strong 12%         
+                .plan__item
+                  .thumb
+                    img(src='img/icons/revenue.png', alt='')
+                    |                 
+                    span Выручка, грн
+                  |               
+                  .circle
+                    strong 12 000
+                    | грн            
+                .plan__item
+                  .thumb
+                    img(src='img/icons/transactions.png', alt='')
+                    |                 
+                    span Сделок
+                  |               
+                  .circle
+                    strong 3           
+                .plan__item
+                  .thumb
+                    img(src='img/icons/check.png', alt='')
+                    |                 
+                    span Средний чек, грн
+                  |               
+                  .circle
+                    strong 4 000
+                    | грн
+              .plan-totals
+                span Выполнение плана             
+                  .plan-totals__result
+                    span 12,0 % (0/0)
+            .sales-plan__wrap--item#10
+              .progress-circle.big(data-percent='17')
+              p Данные за 
+                b октябрь 2017 
+                |года
+              .plan
+                .plan__item
+                  .thumb
+                    img(src='img/icons/graph.png', alt='')     
+                    span План, грн 
+                  .circle
+                    strong 100 000
+                    | грн
+                .plan__item
+                  .thumb
+                    img(src='img/icons/percent.png', alt='')
+                    |                 
+                    span % плана
+                  .circle
+                    strong 12%         
+                .plan__item
+                  .thumb
+                    img(src='img/icons/revenue.png', alt='')
+                    |                 
+                    span Выручка, грн
+                  |               
+                  .circle
+                    strong 12 000
+                    | грн            
+                .plan__item
+                  .thumb
+                    img(src='img/icons/transactions.png', alt='')
+                    |                 
+                    span Сделок
+                  |               
+                  .circle
+                    strong 3           
+                .plan__item
+                  .thumb
+                    img(src='img/icons/check.png', alt='')
+                    |                 
+                    span Средний чек, грн
+                  |               
+                  .circle
+                    strong 4 000
+                    | грн
+              .plan-totals
+                span Выполнение плана             
+                  .plan-totals__result
+                    span 12,0 % (0/0)
+            .sales-plan__wrap--item#11
+              .progress-circle.big(data-percent='17')
+              p Данные за 
+                b ноябрь 2017 
+                |года
+              .plan
+                .plan__item
+                  .thumb
+                    img(src='img/icons/graph.png', alt='')     
+                    span План, грн 
+                  .circle
+                    strong 100 000
+                    | грн
+                .plan__item
+                  .thumb
+                    img(src='img/icons/percent.png', alt='')
+                    |                 
+                    span % плана
+                  .circle
+                    strong 12%         
+                .plan__item
+                  .thumb
+                    img(src='img/icons/revenue.png', alt='')
+                    |                 
+                    span Выручка, грн
+                  |               
+                  .circle
+                    strong 12 000
+                    | грн            
+                .plan__item
+                  .thumb
+                    img(src='img/icons/transactions.png', alt='')
+                    |                 
+                    span Сделок
+                  |               
+                  .circle
+                    strong 3           
+                .plan__item
+                  .thumb
+                    img(src='img/icons/check.png', alt='')
+                    |                 
+                    span Средний чек, грн
+                  |               
+                  .circle
+                    strong 4 000
+                    | грн
+              .plan-totals
+                span Выполнение плана             
+                  .plan-totals__result
+                    span 12,0 % (0/0)
+            .sales-plan__wrap--item#12
+              .progress-circle.big(data-percent='17')
+              p Данные за 
+                b декабрь 2017 
+                |года
+              .plan
+                .plan__item
+                  .thumb
+                    img(src='img/icons/graph.png', alt='')     
+                    span План, грн 
+                  .circle
+                    strong 100 000
+                    | грн
+                .plan__item
+                  .thumb
+                    img(src='img/icons/percent.png', alt='')
+                    |                 
+                    span % плана
+                  .circle
+                    strong 12%         
+                .plan__item
+                  .thumb
+                    img(src='img/icons/revenue.png', alt='')
+                    |                 
+                    span Выручка, грн
+                  |               
+                  .circle
+                    strong 12 000
+                    | грн            
+                .plan__item
+                  .thumb
+                    img(src='img/icons/transactions.png', alt='')
+                    |                 
+                    span Сделок
+                  |               
+                  .circle
+                    strong 3           
+                .plan__item
+                  .thumb
+                    img(src='img/icons/check.png', alt='')
+                    |                 
+                    span Средний чек, грн
+                  |               
+                  .circle
+                    strong 4 000
+                    | грн
+              .plan-totals
+                span Выполнение плана             
+                  .plan-totals__result
+                    span 12,0 % (0/0)
+
+    include ./footer
+    script(src='js/jquery-2.1.3.min.js') 
+    script(src='js/jquery.datetimepicker.full.min.js') 
+    script(src='js/percircle.js') 
+    script(src="js/jquery.mousewheel.js") 
+    script(src="js/script.js")

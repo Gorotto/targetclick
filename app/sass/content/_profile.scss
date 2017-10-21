@@ -1,0 +1,664 @@
+.profile {
+  width: 100%;
+  float: left;
+  &__filter {
+    width: 100%;
+    float: left;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    &--item {
+      float: left;
+      width: auto;
+      position: relative;
+      padding: 20px 15px 10px;
+      box-sizing: border-box;
+      text-align: center;
+      @include breakpoint(max-width 670px) {
+        width: 50%;
+      }
+      .title {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #333;
+        float: none;
+        display: inline-block;
+      }
+      .count {
+        width: 34px;
+        height: 34px;
+        background-color: #e6e6e6;
+        border-radius: 50%;
+        float: none;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 34px;
+        color: #fff;
+        margin-left: 5px;
+        margin-top: -5px;
+        display: inline-block;
+      }
+    }
+    .active {
+      background-color: #ff9100;
+      .title {
+        color: #fff;
+      }
+      .count {
+        background-color: #fff;
+        color: #ff9100;
+      }
+    }
+  }
+  &__communication {
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 20px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    ul {
+      width: 100%;
+      margin: 0;
+      padding: 10px 0;
+      float: left;
+      border-bottom: 1px solid #cdcdcd;
+      li {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0 10px;
+        padding: 10px 0;
+        position: relative;
+        box-sizing: border-box;
+        @include breakpoint(max-width 670px) {
+          width: 100%;
+          text-align: center;
+          margin: 0 5px;
+        }
+        a {
+          color: #333;
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: 300;
+          i {
+            margin-right: 7px;
+          }
+        }
+      }
+      li.active {
+        @include breakpoint(max-width 670px) {
+          a {
+            color: #ff9100;
+          }
+        }
+        &:after {
+          width: 100%;
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -13px;
+          height: 5px;
+          background-color: #ff9100;
+          border-radius: 5px;
+          @include breakpoint(max-width 670px) {
+            display: none;
+          }
+        }
+      }
+    }
+    &--post {
+      width: 100%;
+      float: left;
+      textarea {
+        width: 100%;
+        float: left;
+        resize: none;
+        height: 230px;
+        border: none;
+        padding: 10px;
+        box-sizing: border-box;
+        &::placeholder {
+          color: #bbb;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 20px;
+        }
+      }
+      &-panel {
+        width: 100%;
+        float: left;
+        padding: 10px;
+        box-sizing: border-box;
+        a {
+          color: #333;
+          float: left;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  &__wall--history {
+    width: 100%;
+    float: left;
+    position: relative;
+    &-item {
+      width: 100%;
+      float: left;
+      padding-left: 40px;
+      box-sizing: border-box;
+      &:before {
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: #e6e6e6;
+        position: absolute;
+        left: 10px;
+        top: 0;
+      }
+      .description {
+        width: 100%;
+        float: left;
+        padding: 30px 0;
+        box-sizing: border-box;
+        span {
+          width: 100%;
+          float: left;
+          text-align: left;
+          font-size: 18px;
+          font-weight: 700;
+          color: #333;
+        }
+        p {
+          width: 100%;
+          float: left;
+          margin: 0;
+          color: #333;
+          font-size: 16px;
+          font-weight: 300;
+        }
+      }
+      .note {
+        width: 100%;
+        float: left;
+        background-color: white;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 15px 0;
+        &--thumb {
+          float: left;
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: 15px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &--text,
+        &--date {
+          width: calc(100% - 50px);
+          float: right;
+          text-align: left;
+          font-weight: 400;
+          color: #333;
+
+        }
+        &--date {
+          color: #bbb;
+        }
+        textarea {
+          width: 100%;
+          float: left;
+          resize: none;
+          height: 70px;
+          border: none;
+          margin-top: 10px;
+          padding-top: 10px;
+          box-sizing: border-box;
+          border-top: 1px solid #e6e6e6;
+          &::placeholder {
+            color: #6d6d6d;
+            font-family: OpenSans;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 16px;
+          }
+        }
+        &-new {
+          &:before {
+            content: "";
+            background-image: url("../img/icons/note-icon.png");
+            width: 44px;
+            height: 44px;
+            position: absolute;
+            left: -4px;
+            background-size: 65%;
+            background-repeat: no-repeat;
+            margin-top: 50px;
+          }
+        }
+        &-users {
+          &:before {
+            content: "";
+            background-image: url("../img/icons/user-icon.png");
+            width: 44px;
+            height: 44px;
+            position: absolute;
+            left: -4px;
+            background-size: 65%;
+            background-repeat: no-repeat;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+.profile__user {
+  width: 35%;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  &--thumb {
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 244px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &--chat {
+    width: 100%;
+    float: left;
+    height: 50px;
+    background-color: #ff9100;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #fff;
+  }
+  &--contract,
+  &--edit {
+    width: 100%;
+    float: left;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #333;
+  }
+  &--edit {
+    margin-top: 22px;
+  }
+  @include breakpoint(max-width 670px) {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+.profile__info {
+  width: 62%;
+  margin-left: 20px;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  @include breakpoint(max-width 670px) {
+    width: 100%;
+    margin-left: 0;
+    padding: 15px;
+  }
+  &--title {
+    width: 100%;
+    float: left;
+    padding:  0 0 14px 0;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-weight: 300;
+    color: #333;
+    text-align: left;
+    border-bottom: 1px solid #f7f7f7;
+  }
+  p {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 9px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    text-align: left;
+    span {
+      float: left;
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+      width: 43%;
+      text-align: left;
+    }
+  }
+}
+
+.profile__panel {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  a {
+    width: 25%;
+    float: left;
+    border-right: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    @include breakpoint(max-width 670px) {
+      width: 50%;
+      border-bottom: 1px solid #e6e6e6;
+    }
+    &:last-of-type {
+      border-radius: none;
+    }
+    span {
+      font-weight: 300;
+      font-size: 16px;
+      display: inline-block;
+      margin: 0 auto;
+      float: none;
+      width: auto;
+      border-bottom: 1px dashed;
+    }
+  }
+  &--task span{
+    color: #ff9100;
+  }
+  &--edit span{
+    color: #3d8910;
+  }
+  &--block span{
+    color: #d30b0b;
+  }
+  &--dismiss span{
+    color: #d30b0b;
+  }
+}
+
+.profile__note {
+  width: 100%;
+  float: left;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: right;
+  @include breakpoint(max-width 670px) {
+    padding: 15px;
+  }
+  &--field {
+    width: 100%;
+    float: left;
+    height: 100px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    background-color: #fff;
+    padding-left: 15px;
+    padding-top: 7px;
+    box-sizing: border-box;
+    resize: none;
+    color: #333;
+    margin-bottom: 20px;
+    &:focus {
+      border: 1px solid #ff9100;
+    }
+    &::placeholder {
+      color: #333;
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+  &--send {
+    margin-top: 0;
+    width: 150px;
+    float: none;
+    text-align: center;
+    display: inline-block;
+    background-color: #ffaa15;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #fff;
+    margin-left: 12px;
+  }
+}
+
+.profile__wall {
+  width: 100%;
+  float: left;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: right;
+  @include breakpoint(max-width 670px) {
+    padding: 15px;
+  }
+  &--post {
+    width: 100%;
+    float: left;
+    &-description {
+      width: 100%;
+      float: left;
+      margin: 30px 0 20px;
+      text-align: left;
+      font-size: 20px;
+      font-weight: 300;
+      color: #333;
+    }
+    &-thumb {
+      width: 100%;
+      float: left;
+      position: relative;
+      min-height: 345px;
+      margin-bottom: 30px;
+      @include breakpoint(max-width 670px) {
+        min-height: 100px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-info {
+      width: 100%;
+      float: left;
+      text-align: left;
+      .date {
+        width: auto;
+        float: left;
+        color: #333;
+        font-size: 18px;
+        font-weight: 300;
+        @include breakpoint(max-width 670px) {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      }
+      .comments {
+        float: left;
+        margin-left: 20px;
+        @include breakpoint(max-width 670px) {
+          margin-left: 0;
+        }
+        i {
+          color: #bbb;
+          font-size: 20px;
+          float: left;
+        }
+        .count {
+          float: left;
+          margin-left: 5px;
+          color: #333;
+          font-size: 18px;
+          font-weight: 300;
+        }
+      }
+      .likes {
+        float: left;
+        color: #ff9100;
+        margin-left: 20px;
+        font-size: 18px;
+        font-weight: 300;
+        i {
+          font-size: 20px;
+          display: inline-block;
+          color: #ff9100;
+          margin-left: 5px;
+        }
+        .count {
+          display: inline-block;
+          margin-left: 5px;
+          color: #ff9100;
+          font-size: 18px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+.thumb-user {
+  float: left;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+.about-user {
+  width: calc(100% - 80px);
+  float: left;
+  text-align: left;
+  padding-left: 20px;
+  box-sizing: border-box;
+  a {
+    font-size: 18px;
+    line-height: 28px;
+    color: #23527c;
+    font-weight: 700;
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+  }
+  span {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+    color: #bbb;
+    font-weight: 300;
+  }
+}
+
+.profile__wall--comment {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-top: 40px;
+  &-content {
+    width: calc(100% - 80px);
+    padding-left: 20px;
+    box-sizing: border-box;
+    float: left;
+    .about-user {
+      padding-left: 0;
+      width: 100%;
+    }
+
+  }
+  &-text {
+    width: 100%;
+    float: left;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    font-size: 18px;
+    margin: 20px 0 25px;
+  }
+}
+
+.profile__wall--comment-write {
+  width: 100%;
+  float: left;
+  margin-top: 25px;
+  .thumb-user {
+    @include breakpoint(max-width 670px) {
+      display: none;
+    }
+  }
+  textarea {
+    float: left;
+    height: 65px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    background-color: #fff;
+    padding-left: 15px;
+    padding-top: 7px;
+    box-sizing: border-box;
+    resize: none;
+    color: #333;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: calc(100% - 185px);
+    @include breakpoint(max-width 670px) {
+      margin-left: 0;
+      width: calc(100% - 85px);
+    }
+  }
+  .send-comment {
+    width: 65px;
+    height: 65px;
+    border-radius: 5px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    background-color: #f5a100;
+
+    i {
+      color: #fff;
+    }
+  }
+}

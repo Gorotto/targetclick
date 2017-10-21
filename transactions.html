@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Предмет</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/libs.min.css"/>
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css"/>
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <ul class="header__menu">
+        <li class="active"><a href="">Обзор данных</a></li>
+        <li><a href="">Обсуждения</a></li>
+        <li><a href="">Склад</a></li>
+        <li><a href="">Задачи</a></li>
+        <li><a href="">Профиль сотрудника</a></li>
+        <li><a href="">Клиент</a></li>
+        <li><a href="">Счета</a></li>
+        <li><a href="">Календарь</a></li>
+        <li><a href="">Сотрудники</a></li>
+        <li><a href="">План продаж</a></li>
+        <li><a href="">Сделки</a></li>
+        <li><a href="">Облачное хранилище</a></li>
+        <li><a href="">Доставка</a></li>
+        <li><a href="">Чат </a></li>
+        <li><a href="">Звонки </a></li>
+      </ul>
+      <div class="container">
+        <div class="header__menu--button">
+          <div class="sandwich"><span class="sw-topper"></span>              <span class="sw-bottom"></span>              <span class="sw-footer"></span></div>
+        </div>
+        <div class="header__logo"><img src="img/logo.png"/></div><a class="header__user" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+      </div>
+    </header>
+    <section class="delivery">
+      <div class="container">
+        <div class="title__wrap">
+          <h2>Сделки</h2>
+        </div>
+        <form class="search__wrap" method="POST">
+          <input class="search__wrap--search" type="text" placeholder="Поиск"/>
+          <button>Применить</button>
+        </form>
+        <div class="filter-count"><a class="filter-count--item" href="#"><span class="count count-turquoise">2</span><span class="filter-count--item-title">Новый</span></a><a class="filter-count--item" href="#"><span class="count count-orange">0</span><span class="filter-count--item-title">Недозвон</span></a><a class="filter-count--item" href="#"><span class="count count-yellow">0</span><span class="filter-count--item-title">Подумаю</span></a><a class="filter-count--item" href="#"><span class="count count-red">0</span><span class="filter-count--item-title">Отказ</span></a><a class="filter-count--item" href="#"><span class="count count-blue">0</span><span class="filter-count--item-title">Ожидает оплаты</span></a><a class="filter-count--item" href="#"><span class="count count-green">0</span><span class="filter-count--item-title">Оплачен</span></a><a class="filter-count--item" href="#"><span class="count count-grey">0</span><span class="filter-count--item-title">Возврат</span></a></div>
+        <div class="tables__wrap">
+          <form class="tables__wrap--search" method="POST">
+            <input class="search__wrap--search" type="text" placeholder="ФИО или компания"/>
+            <button>Применить</button>
+            <div class="transactions-status"><span>Заказов:</span>
+              <p>0 (0) на 0 грн. (оплачено 0 грн.)</p>
+            </div>
+            <div class="filter-status"><span> Фильтр по статусу:</span><a href="">Изменить настройки</a></div>
+          </form>
+          <div class="scroll__wrap">
+            <div class="scroll__wrap--box">
+              <div class="scroll__wrap--box-title"><span class="scroll__wrap--box-date">Дата	</span><span class="scroll__wrap--box-name">ФИО</span><span class="scroll__wrap--box-company">Компания	   </span><span class="scroll__wrap--box-telephone">Телефон  </span><span class="scroll__wrap--box-note">Заметка    </span><span class="scroll__wrap--box-email">E-mail</span><span class="scroll__wrap--box-status">Статус    </span><span class="scroll__wrap--box-amount">Сумма,грн.    </span><span class="scroll__wrap--box-recipient">Ответственный    </span></div>
+              <div class="scroll__wrap--box-row"><span class="scroll__wrap--box-date">12.05.2017 14:22	</span><span class="scroll__wrap--box-name">Петренко Иван Юрьевич</span><span class="scroll__wrap--box-company">ЮкрейнКомпани	   </span><span class="scroll__wrap--box-telephone">0506551290 </span><span class="scroll__wrap--box-note">    </span><span class="scroll__wrap--box-email"></span><span class="scroll__wrap--box-status"> 
+                  <select>
+                    <option>Новый </option>
+                    <option>Новый</option>
+                    <option>Новый</option>
+                  </select></span><span class="scroll__wrap--box-amount">100    </span><span class="scroll__wrap--box-recipient">Андрей Иванов </span></div>
+              <div class="scroll__wrap--box-row"><span class="scroll__wrap--box-date">12.05.2017 14:22	</span><span class="scroll__wrap--box-name">Петренко Иван Юрьевич</span><span class="scroll__wrap--box-company">ЮкрейнКомпани	   </span><span class="scroll__wrap--box-telephone">0506551290 </span><span class="scroll__wrap--box-note">    </span><span class="scroll__wrap--box-email"></span><span class="scroll__wrap--box-status"> 
+                  <select>
+                    <option>Новый </option>
+                    <option>Новый</option>
+                    <option>Новый</option>
+                  </select></span><span class="scroll__wrap--box-amount">100    </span><span class="scroll__wrap--box-recipient">Андрей Иванов </span></div>
+              <div class="scroll__wrap--box-row"><span class="scroll__wrap--box-date">12.05.2017 14:22	</span><span class="scroll__wrap--box-name">Петренко Иван Юрьевич</span><span class="scroll__wrap--box-company">ЮкрейнКомпани	   </span><span class="scroll__wrap--box-telephone">0506551290 </span><span class="scroll__wrap--box-note">    </span><span class="scroll__wrap--box-email"></span><span class="scroll__wrap--box-status"> 
+                  <select>
+                    <option>Новый </option>
+                    <option>Новый</option>
+                    <option>Новый</option>
+                  </select></span><span class="scroll__wrap--box-amount">100    </span><span class="scroll__wrap--box-recipient">Андрей Иванов </span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo"><img src="img/logo.png"/></div>
+        <p>Target click © 2017</p>
+      </div>
+    </footer>
+    <script src="js/jquery-2.1.3.min.js"> </script>
+    <script src="js/jquery.datetimepicker.full.min.js"> </script>
+    <script src="js/jquery.jscrollpane.min.js"> </script>
+    <script src="js/jquery.mousewheel.js"> </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

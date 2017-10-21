@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Предмет
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous")
+    link(rel="stylesheet", href="css/libs.min.css")
+    link(rel="stylesheet", href="css/jquery.datetimepicker.css")
+    link(rel="stylesheet", href="css/jquery.jscrollpane.css")
+    link(rel="stylesheet", href="css/styles.css")
+
+  body
+    include ./header
+    section.delivery
+      .container
+        .title__wrap
+          h2 Счета
+        form(method='POST' ).period__wrap
+
+          .period__wrap--from
+            span От
+            input.datepicker-inner(type='text')
+          .period__wrap--before
+            span До
+            input.datepicker-inner(type='text')
+          .select-wrap.select-wrap--some
+            select
+              option Плательщик
+              option Плательщик
+              option Плательщик
+          button Применить
+        .filter-count
+          a(href="#").filter-count--item
+            span.count.count-turquoise 2
+            span.filter-count--item-title Черновик
+          a(href="#").filter-count--item
+            span.count.count-orange 0
+            span.filter-count--item-title Выставлен
+          a(href="#").filter-count--item
+            span.count.count-yellow 0
+            span.filter-count--item-title Оплачен
+          a(href="#").filter-count--item
+            span.count.count-red 0
+            span.filter-count--item-title Отказ
+          a(href="#").filter-count--item
+            span.count.count-blue 0
+            span.filter-count--item-title Просрочен
+          p.total-amount Общая сумма:
+           span.value 1320 грн
+        .tables__wrap
+          .scroll__wrap
+            .scroll__wrap--box
+              .scroll__wrap--box-title
+                .scroll__wrap--box-checkbox
+                  input#checkbox_1(type='checkbox', name='status')
+                  label(for='checkbox_1')
+                span.scroll__wrap--box-code №
+                span.scroll__wrap--box-date Дата
+                span.scroll__wrap--box-amount Сумма, грн.	   
+                span.scroll__wrap--box-recipient Плательщик   
+                span.scroll__wrap--box-status  Статус
+                
+              .scroll__wrap--box-row
+                .scroll__wrap--box-checkbox
+                  input#checkbox_2(type='checkbox', name='status')
+                  label(for='checkbox_2')
+                span.scroll__wrap--box-code 08-2017-190
+                span.scroll__wrap--box-date 12.05.2017 14:22
+                span.scroll__wrap--box-amount 100   
+                span.scroll__wrap--box-recipient Иванов Иван Иванович
+                span.scroll__wrap--box-status Выставлен
+                
+              .scroll__wrap--box-row
+                .scroll__wrap--box-checkbox
+                  input#checkbox_3(type='checkbox', name='status')
+                  label(for='checkbox_3')
+                span.scroll__wrap--box-code 08-2017-190
+                span.scroll__wrap--box-date 12.05.2017 14:22
+                span.scroll__wrap--box-amount 100   
+                span.scroll__wrap--box-recipient Иванов Иван Иванович
+                span.scroll__wrap--box-status Черновик
+              
+    include ./footer
+    script(src='js/jquery-2.1.3.min.js') 
+    script(src='js/jquery.datetimepicker.full.min.js') 
+    script(src='js/jquery.jscrollpane.min.js') 
+    script(src="js/jquery.mousewheel.js") 
+    script(src="js/script.js")

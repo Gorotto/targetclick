@@ -1,0 +1,258 @@
+.calendar {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-top: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+  @include breakpoint(max-width 660px) {
+    padding: 10px;
+  }
+  &__panel {
+    width: 100%;
+    float: left;
+    position: relative;
+    &--curent-day {
+      margin-left: 12%;
+      width: 110px;
+      height: 40px;
+      border: 1px solid #dadada;
+      border-radius: 5px;
+      text-align: center;
+      color: #333;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 40px;
+      float: left;
+      @include breakpoint(max-width 770px) {
+        margin-left: 17%;
+      }
+      @include breakpoint(max-width 660px) {
+        margin-left: 31%;
+      }
+    }
+    &--menu {
+      width: 70%;
+      float: right;
+      text-align: right;
+      margin: 0;
+      padding: 0;
+      @include breakpoint(max-width 770px) {
+        width: auto;
+      }
+      @include breakpoint(max-width 660px) {
+        width: 100%;
+        margin-top: 10px;
+      }
+      li {
+        list-style-type: none;
+        display: inline-block;
+        float: none;
+        margin-left: 10px;
+        width: 110px;
+        height: 40px;
+        border: 1px solid #dadada;
+        border-radius: 5px;
+        text-align: center;
+        &:hover {
+          background-color: #dadada;
+        }
+        @include breakpoint(max-width 660px) {
+          float: left;
+          margin-left: 0;
+          margin-right: 10px;
+          width: 90px;
+        }
+        a {
+          width: 100%;
+          display: inline-block;
+          color: #333;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 40px;
+        }
+      }
+      li.active {
+        background-color: #dadada;
+      }
+    }
+  }
+  &__wrap {
+    width: 100%;
+    float: left;
+    &--title {
+      width: 100%;
+      float: left;
+      text-align: center;
+      color: #333;
+      font-size: 22px;
+      font-weight: 400;
+      margin: 40px 0;
+    }
+    &--item {
+      width: 100%;
+      float: left;
+      &-title {
+        width: calc(100% / 7);
+        float: left;
+        height: 66px;
+        background-color: #dadada;
+        border-right: 2px solid #f8f8f8;
+        box-sizing: border-box;
+        color: #333;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        line-height: 66px;
+        z-index: 15;
+        position: relative;
+        &:last-of-type {
+          border: none;
+        }
+        .curent {
+          color: #333;
+        }
+      }
+      &-day {
+        z-index: 15;
+        position: relative;
+        float: left;
+        width: calc(100% / 7);
+        height: 120px;
+        background-color: #fff;
+        border: 1px solid #f8f8f8;
+        padding: 10px;
+        color: #ccc;
+        font-size: 16px;
+        font-weight: 400;
+        box-sizing: border-box;
+        text-align: right;
+      }
+      &-event {
+        width: 100%;
+        float: left;
+        position: relative;
+        background-color: #dadada;
+        margin-top: 10px;
+        min-height: 60px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        color: #333;
+        line-height: normal;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+    }
+    .owl-nav {
+      width: auto;
+      position: absolute;
+      top: -50px;
+      left: 0;
+      @include breakpoint(max-width 1120px) {
+        top: -40px;
+      }
+      @include breakpoint(max-width 660px) {
+        top: -90px;
+      }
+    }
+    .owl-prev{
+      width: 40px;
+      height: 40px;
+      float: left;
+      position: relative;
+      border: 1px solid #dadada;
+      border-radius: 7px;
+      &:hover{
+        background-color: #dadada;
+      }
+      &:after{
+        content: "";
+        display: inline-block;
+        width: 10px;
+        position: absolute;
+        height: 2px;
+        background-color: #333;
+        -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+       left: 14px;
+        margin-top: 23px;
+      }
+      &:before{
+        content: "";
+        display: inline-block;
+        width: 10px;
+        position: absolute;
+        height: 2px;
+        background-color: #333;
+        -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+       left: 14px;
+       margin-top: 16px;
+      }
+    }
+    .owl-next{
+      width: 40px;
+      height: 40px;
+      float: right;
+      border: 1px solid #dadada;
+      border-radius: 7px;
+      margin-left: 10px;
+      &:hover{
+        background-color: #dadada;
+      }
+      &:after{
+        content: "";
+        display: inline-block;
+        width: 10px;
+        position: absolute;
+        height: 2px;
+        background-color: #333;
+        -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+       right: 14px;
+        margin-top: 23px;
+      }
+      &:before{
+        content: "";
+        display: inline-block;
+        width: 10px;
+        position: absolute;
+        height: 2px;
+        background-color: #333;
+        -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+       right: 14px;
+       margin-top: 16px;
+      }
+    }
+  }
+}
+
+.calendar__wrap--mobile {
+  width: 100%;
+  float: left;
+  position: relative;
+  &-item {
+    width: 100%;
+    float: left;
+  }
+  &-day {
+    float: left;
+    width: calc(98% / 7);
+    border-left: 1px solid #dadada;
+  }
+  &-title {
+    width: 100%;
+    float: left;
+    position: relative;
+    color: #333;
+  }
+}

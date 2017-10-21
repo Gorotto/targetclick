@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Предмет
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous")
+    link(rel="stylesheet", href="css/libs.min.css")
+    link(rel="stylesheet", href="css/jquery.datetimepicker.css")
+    link(rel="stylesheet", href="css/jquery.jscrollpane.css")
+    link(rel="stylesheet", href="css/styles.css")
+
+  body
+    include ./header
+    section.delivery
+      .container
+        .title__wrap
+          h2 Товары
+        include ./search
+        .tables__wrap
+          .scroll__wrap
+            .scroll__wrap--box
+              .scroll__wrap--box-title
+                .scroll__wrap--box-checkbox
+                  input#checkbox_1(type='checkbox', name='status')
+                  label(for='checkbox_1')
+                span.scroll__wrap--box-name Название 
+                span.scroll__wrap--box-amount Цена  
+                span.scroll__wrap--box-code Код	   
+                span.scroll__wrap--box-quantity Количество 
+                span.scroll__wrap--box-razdel Раздел 
+                span.scroll__wrap--box-stock Склад   
+                span.scroll__wrap--box-description Описание  
+                
+              .scroll__wrap--box-row
+                .scroll__wrap--box-checkbox
+                  input#checkbox_2(type='checkbox', name='status')
+                  label(for='checkbox_2')
+                span.scroll__wrap--box-name Блокнот
+                span.scroll__wrap--box-amount 123.00 грн.
+                span.scroll__wrap--box-code
+                span.scroll__wrap--box-quantity 15
+                span.scroll__wrap--box-razdel Основной
+                span.scroll__wrap--box-stock 
+                span.scroll__wrap--box-description
+                
+              .scroll__wrap--box-row
+                .scroll__wrap--box-checkbox
+                  input#checkbox_3(type='checkbox', name='status')
+                  label(for='checkbox_3')
+                span.scroll__wrap--box-name Блокнот
+                span.scroll__wrap--box-amount 123.00 грн.
+                span.scroll__wrap--box-code
+                span.scroll__wrap--box-quantity 15
+                span.scroll__wrap--box-razdel Основной
+                span.scroll__wrap--box-stock 
+                span.scroll__wrap--box-description
+                
+              .scroll__wrap--box-row
+                .scroll__wrap--box-checkbox
+                  input#checkbox_4(type='checkbox', name='status')
+                  label(for='checkbox_4')
+                span.scroll__wrap--box-name Блокнот
+                span.scroll__wrap--box-amount 123.00 грн.
+                span.scroll__wrap--box-code
+                span.scroll__wrap--box-quantity 15
+                span.scroll__wrap--box-razdel Основной
+                span.scroll__wrap--box-stock 
+                span.scroll__wrap--box-description
+   
+                
+              
+    include ./footer
+    script(src='js/jquery-2.1.3.min.js') 
+    script(src='js/jquery.datetimepicker.full.min.js') 
+    script(src='js/jquery.jscrollpane.min.js') 
+    script(src="js/jquery.mousewheel.js") 
+    script(src="js/script.js")

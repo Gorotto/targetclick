@@ -1,0 +1,41 @@
+.profile__wall
+  .profile__wall--post
+    a(href="").thumb-user
+      img(src="img/user-pic.png")
+    .about-user
+      a(href="") Александр Стогниенко
+      span написал:
+    p.profile__wall--post-description Фото
+    .profile__wall--post-thumb
+      img(src="img/post-wall.png")
+    .profile__wall--post-info
+      span.date 17.08.2017 18:02:48 
+      a(href="").comments
+        i.fa.fa-comment(aria-hidden='true')
+        .count 2
+      a(href="").likes Нравится
+        i.fa.fa-heart-o(aria-hidden='true')
+        .count 1
+  .profile__wall--comment
+    a(href="").thumb-user
+      img(src="img/user-pic-2.png")
+    .profile__wall--comment-content
+      .about-user
+        a(href="") Александр Стогниенко
+        span ответ на комментарий:
+      p.profile__wall--comment-text Мне нравится:)
+      .profile__wall--post-info
+        span.date 17.08.2017 18:02:48 
+        a(href="").comments
+          i.fa.fa-comment(aria-hidden='true')
+          .count 2
+        a(href="").likes Нравится
+          i.fa.fa-heart-o(aria-hidden='true')
+          .count 1
+  .profile__wall--comment-write
+    a(href="").thumb-user
+      img(src="img/user-pic.png")
+    textarea(placeholder="Написать комментарий")
+    button.send-comment
+      i.fa.fa-rocket(aria-hidden='true')
+ 
